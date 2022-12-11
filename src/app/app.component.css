@@ -1,0 +1,55 @@
+.navbar {
+    @apply hidden 
+    sm:flex 
+    justify-center 
+    sm:flex-wrap 
+    sm:items-center 
+    sm:justify-between 
+    bg-slate-700;
+}
+
+.btn {
+    @apply text-white 
+    text-base
+    border 
+    sm:py-2 sm:px-6
+    py-2 px-6 
+    focus:outline-none
+    rounded-tl-lg
+    rounded-br-lg 
+    m-2 
+    hover:text-dark
+    hover:bg-white;
+}
+
+.img-nav {
+    @apply justify-start hidden sm:block sm:ml-2 w-12;
+}
+
+.img-logo {
+    @apply mx-auto w-24 justify-center sm:hidden mb-8;
+}
+
+.home {
+    @apply mx-auto max-w-screen-xl px-4 py-32 sm:flex sm:h-screen sm:items-center
+}
+
+.contenedor-texto {
+    @apply mx-auto max-w-xl text-center
+}
+
+.titulo-uno {
+    @apply text-3xl font-extrabold sm:text-5xl text-white
+}
+
+.titulo-dos {
+    @apply font-extrabold text-slate-800 sm:block
+}
+
+.parrafo{
+    @apply mt-4 sm:text-xl sm:leading-relaxed text-white
+}
+
+.contenedor-boton{
+    @apply mt-8 flex flex-wrap justify-center gap-4 sm:hidden
+}
