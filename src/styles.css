@@ -59,6 +59,10 @@ body {
     @apply mt-4 sm:text-xl sm:leading-relaxed text-white
 }
 
+.enlace-animado{
+    @apply mt-4 sm:text-xl sm:leading-relaxed text-white animate-ping
+}
+
 .contenedor-boton{
     @apply mt-8 flex flex-wrap justify-center gap-4 sm:hidden
 }
