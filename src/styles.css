@@ -17,6 +17,13 @@ body {
     bg-slate-700;
 }
 
+.footer {
+    @apply hidden
+    sm:flex 
+    sm:justify-end
+    bg-slate-700;
+}
+
 .btn {
     @apply text-white 
     text-base
