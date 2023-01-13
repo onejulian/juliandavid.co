@@ -39,7 +39,7 @@ body {
 }
 
 .img-nav {
-    @apply justify-start hidden sm:block sm:ml-2 w-12;
+    @apply justify-start  sm:block sm:ml-2 w-12;
 }
 
 .img-logo {
