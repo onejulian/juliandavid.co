@@ -1,26 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply bg-gradient-to-l from-slate-400 to-slate-700
+    @apply 
+    bg-gradient-to-l 
+    from-slate-400 
+    to-slate-700
+}
+
+.svg-menu {
+    @apply 
+    fill-current 
+    h-6 
+    w-4;
 }
 
 .navbar {
-    @apply hidden 
-    sm:flex 
-    justify-center 
-    sm:flex-wrap 
-    sm:items-center 
-    sm:justify-between 
+    @apply
+    flex 
+    flex-wrap 
+    items-center 
+    justify-between 
     bg-slate-700;
 }
 
+.text-nav-mobile a {
+    @apply
+    text-white 
+    cursor-pointer 
+    bg-transparent 
+    mx-4 
+    block;
+}
+
+.btn-menu {
+    @apply
+    text-white 
+    btn 
+    cursor-pointer 
+    bg-transparent 
+    px-4 
+    block 
+    outline-none 
+    focus:outline-none;
+}
+
+.side-menu {
+    display: flex;
+    transform: translateX(-200%);
+    transition: all ease-in-out .3s;
+}
+.active {
+  transform: translateX(0);
+}
+
 .footer {
-    @apply hidden
-    sm:flex 
+    @apply
+    flex 
     sm:justify-end
+    justify-center
     bg-slate-700;
 }
 
@@ -39,37 +78,79 @@ body {
 }
 
 .img-nav {
-    @apply justify-start  sm:block sm:ml-2 w-12;
+    @apply 
+    justify-start 
+    block ml-2 w-12;
+}
+
+.icons-footer a {
+    @apply 
+    block m-3 w-10;
 }
 
 .img-logo {
-    @apply mx-auto w-24 justify-center sm:hidden mb-8;
+    @apply 
+    mx-auto 
+    w-24 
+    justify-center 
+    sm:hidden mb-8;
 }
 
 .home {
-    @apply mx-auto max-w-screen-xl px-4 py-32 sm:flex sm:h-screen sm:items-center
+    @apply 
+    mx-auto 
+    max-w-screen-xl 
+    px-4 
+    py-32 
+    flex 
+    h-screen 
+    items-center
 }
 
 .contenedor-texto {
-    @apply mx-auto max-w-xl text-center
+    @apply 
+    mx-auto 
+    max-w-xl 
+    text-center
 }
 
 .titulo-uno {
-    @apply text-3xl font-extrabold sm:text-5xl text-white
+    @apply 
+    text-3xl 
+    font-extrabold 
+    sm:text-5xl 
+    text-white
 }
 
 .titulo-dos {
-    @apply font-extrabold text-slate-800 sm:block
+    @apply 
+    font-extrabold 
+    text-slate-800 
+    sm:block
 }
 
 .parrafo{
-    @apply mt-4 sm:text-xl sm:leading-relaxed text-white
+    @apply 
+    mt-4 
+    sm:text-xl 
+    sm:leading-relaxed 
+    text-white
 }
 
 .enlace-animado{
-    @apply mt-4 sm:text-xl sm:leading-relaxed text-white animate-ping
+    @apply 
+    mt-4 
+    sm:text-xl 
+    sm:leading-relaxed 
+    text-white animate-ping
 }
 
 .contenedor-boton{
-    @apply mt-8 flex flex-wrap justify-center gap-4 sm:hidden
+    @apply 
+    mt-8 
+    flex 
+    flex-wrap 
+    justify-center 
+    gap-4 
+    sm:hidden
 }
