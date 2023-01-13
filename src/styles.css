@@ -18,10 +18,9 @@ body {
 
 .navbar {
     @apply
-    flex 
-    flex-wrap 
+    flex  
     items-center 
-    justify-between 
+    justify-between
     bg-slate-700;
 }
 
@@ -30,8 +29,7 @@ body {
     text-white 
     cursor-pointer 
     bg-transparent 
-    mx-4 
-    block;
+    px-1;
 }
 
 .btn-menu {
@@ -47,7 +45,6 @@ body {
 }
 
 .side-menu {
-    display: flex;
     transform: translateX(-200%);
     transition: all ease-in-out .3s;
 }
@@ -80,7 +77,7 @@ body {
 .img-nav {
     @apply 
     justify-start 
-    block ml-2 w-12;
+    ml-2 w-12;
 }
 
 .icons-footer a {

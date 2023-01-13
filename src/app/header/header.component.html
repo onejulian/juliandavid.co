@@ -1,5 +1,5 @@
-<div class="navbar">
-    <div class="img-nav">
+<div class="navbar" [class.justify-between]="!showMenu"  >
+    <div class="img-nav" [class.hidden]="showMenu">
         <img src="./../../favicon.ico" alt="" routerLink="/" >
     </div>
     <div class="hidden sm:block">
@@ -7,7 +7,7 @@
         <button class="btn">Proyectos</button>
         <button class="btn">Es / En</button>
     </div>
-    <div class="sm:hidden side-menu text-nav-mobile" [class.active]="showMenu">
+    <div class="sm:hidden side-menu text-nav-mobile ml-4" [class.active]="showMenu">
         <a>Contacto</a>
         <a>Proyectos</a>
         <a>Es / En</a>
