@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-    @apply 
-    bg-gradient-to-l 
-    from-slate-300 
-    to-slate-500
-} */
-
 .svg-menu {
     @apply 
     fill-current 
@@ -20,7 +13,8 @@
     @apply
     flex  
     items-center 
-    justify-between
+    sm:justify-between
+    justify-center
     bg-gradient-to-l 
     from-slate-600
     to-slate-400
@@ -172,4 +166,21 @@ html {
     justify-center 
     gap-4 
     sm:hidden
+}
+
+* {
+    @apply 
+    box-border 
+    m-0 
+    p-0 
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
 }
