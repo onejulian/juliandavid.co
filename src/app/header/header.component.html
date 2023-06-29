@@ -1,20 +1,15 @@
-<div class="navbar" [class.justify-between]="!showMenu"  >
-    <div class="img-nav" [class.hidden]="showMenu">
-        <img src="./../../favicon.ico" alt="" routerLink="/" >
+<div class="navbar">
+    <div class="hidden sm:block img-nav" >
+        <img src="./../../favicon.ico" alt="" routerLink="/">
     </div>
     <div class="hidden sm:block">
         <button class="btn">Contacto</button>
         <button class="btn">Proyectos</button>
         <button class="btn">Es / En</button>
     </div>
-    <div class="sm:hidden side-menu text-nav-mobile ml-4" [class.active]="showMenu">
-        <a>Contacto</a>
-        <a>Proyectos</a>
-        <a>Es / En</a>
-    </div>
-    <div class="sm:hidden">
-        <button class="btn-menu" type="button" (click)="toggleNavbar()">
-            <svg class="svg-menu" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
+    <div class="sm:hidden flex" [class.active]="showMenu">
+        <!-- <img class="btn" src="./../../assets/icons/projects_icon_142920.svg" alt="" routerLink="/">
+        <img class="btn" src="./../../assets/icons/projects_icon_142920.svg" alt="" routerLink="/">
+        <img class="btn" src="./../../assets/icons/projects_icon_142920.svg" alt="" routerLink="/"> -->
     </div>
 </div>

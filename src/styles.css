@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
     @apply 
     bg-gradient-to-l 
-    from-slate-400 
-    to-slate-700
-}
+    from-slate-300 
+    to-slate-500
+} */
 
 .svg-menu {
     @apply 
@@ -21,7 +21,9 @@ body {
     flex  
     items-center 
     justify-between
-    bg-slate-700;
+    bg-gradient-to-l 
+    from-slate-600
+    to-slate-400
 }
 
 .text-nav-mobile a {
@@ -57,7 +59,9 @@ body {
     flex 
     sm:justify-end
     justify-center
-    bg-slate-700;
+    bg-gradient-to-l
+    from-slate-600
+    to-slate-400
 }
 
 .btn {
@@ -93,15 +97,33 @@ body {
     sm:hidden mb-8;
 }
 
+.formato-texto {
+    font-size:5vw;
+}
+
 .home {
     @apply 
     mx-auto 
-    max-w-screen-xl 
+    /* max-w-screen-xl  */
     px-4 
-    py-32 
+    /* py-32  */
     flex 
-    h-screen 
+    /* h-screen  */
+    my-40
     items-center
+}
+
+html {
+    @apply
+    bg-gradient-to-l 
+    from-slate-300 
+    to-slate-500
+}
+
+.box{
+    @apply 
+    border
+    border-green-600
 }
 
 .contenedor-texto {
@@ -113,9 +135,9 @@ body {
 
 .titulo-uno {
     @apply 
-    text-3xl 
+    /* text-3xl  */
     font-extrabold 
-    sm:text-5xl 
+    /* sm:text-5xl  */
     text-white
 }
 
